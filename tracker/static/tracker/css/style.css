@@ -1,0 +1,97 @@
+/* EduTrack Custom Styles */
+
+/* Logo animations */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+/* Main logo styling */
+.main-logo {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.main-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Login/Register page logo styling */
+.login-header img,
+.register-header img {
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.3));
+}
+
+.login-header:hover img,
+.register-header:hover img {
+    transform: scale(1.1);
+}
+
+/* Card hover effects */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+    .main-logo {
+        max-width: 280px !important;
+    }
+    
+    .navbar-brand img {
+        height: 28px !important;
+    }
+    
+    .login-header img,
+    .register-header img {
+        height: 40px !important;
+    }
+}
+
+/* Loading animation for images */
+img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4e73df;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2e59d9;
+}
